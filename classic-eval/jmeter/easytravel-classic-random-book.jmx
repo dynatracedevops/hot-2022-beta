@@ -205,7 +205,7 @@ String LoopCount = vars.get(&quot;LoopCount&quot;);
 headerValue.append(&quot;LSN=&quot;+groupName+&quot;;&quot;);
 
 // LTN The Load Test Name uniquely identifies a test execution (for example, 6h Load Test – June 25)
-headerValue.append(&quot;LTN=LoadTest via JMeterService on Keptn - &quot; +groupName+&quot; - VU(&quot; + threadNum +&quot;) Loops(&quot;+LoopCount+&quot;) - &quot;+ DATEID+&quot;;&quot;);
+headerValue.append(&quot;LTN=LoadTest via JMeterService on ExecutionPlane - &quot; +groupName+&quot; - VU(&quot; + threadNum +&quot;) Loops(&quot;+LoopCount+&quot;) - &quot;+ DATEID+&quot;;&quot;);
 
 // Test Step Name is a logical test step within your load testing script (for example, Login or Add to cart.
 headerValue.append(&quot;TSN=&quot;+samplerName+&quot;;&quot;);
@@ -216,7 +216,7 @@ headerValue.append(&quot;AN= &quot; + JMeterUtils.getProperty(&quot;username&quo
 //Virtual User ID of the unique user who sent the request.
 headerValue.append(&quot;VU=&quot;+ctx.getThreadNum()+&quot;;&quot;);
 
-headerValue.append(&quot;SI=JMeter Service on Keptn;&quot;);
+headerValue.append(&quot;SI=JMeter Service on ExecutionPlane;&quot;);
 
 sampler.getHeaderManager().add(new org.apache.jmeter.protocol.http.control.Header(headerKey, headerValue.toString()));</stringProp>
           <stringProp name="TestPlan.comments">this will run for every sampler</stringProp>
