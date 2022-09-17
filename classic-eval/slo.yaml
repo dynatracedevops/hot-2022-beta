@@ -120,7 +120,7 @@ objectives:
             - <2000
       weight: 2
       key_sli: true
-    - sli: kpi_rt_9_-_Finish_Payment
+    - sli: kpi_rt_4_-_Random_Search
       displayName: ""
       pass:
         - criteria:
@@ -131,7 +131,7 @@ objectives:
             - <=1000
       weight: 1
       key_sli: true
-    - sli: kpi_rt_4_-_Random_Search
+    - sli: kpi_rt_9_-_Finish_Payment
       displayName: ""
       pass:
         - criteria:
